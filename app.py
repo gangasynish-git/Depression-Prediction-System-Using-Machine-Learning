@@ -154,10 +154,11 @@ if st.button("Predict Depression Risk", use_container_width=True):
         confidence = ""
 
     if prediction == 1:
-        st.error(f"**High Risk of Depression**")
+        st.error(f"**High Risk of Depression**\n\n{confidence}")
     else:
-        st.success(f"**Low Risk of Depression**")
+        st.success(f"**Low Risk of Depression**\n\n{confidence}")
 
 st.markdown("---")
 st.caption("This tool is for educational purposes only and not a medical diagnosis.")
+
 
